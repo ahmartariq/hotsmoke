@@ -19,25 +19,28 @@ const loginVal = (e) => {
         error.style.display = "none"
     }
 
-      
     if(username  === "ahmar@yahoo.com" && password === "123456"){
-        console.log("user logged");
-        isUser = true;
-        isAdmin = false
-        
+        console.log("user logged");        
         localStorage.setItem( 'isUser', 'true' );
         localStorage.setItem( 'name', username.slice(0 , username.indexOf("@") ) );
+        localStorage.removeItem("isAdmin");
         location.replace("menu.html")
     }
     else if(username  === "admin@yahoo.com" && password === "admin"){
+        localStorage.setItem("isAdmin" , "true");
+        localStorage.removeItem("isUser");
         location.replace("Dashboard.html")
-        isAdmin = true;
-        isUser = false
     }
     else{
         alert("username or password not correct")
     }
 }
 
+const adminLogout = () => {
+    localStorage.removeItem("isAdmin")
+    location.replace("login.html")
+}
+
 const loginForm = document.getElementById("login");
 loginForm.addEventListener('submit', loginVal);
+
