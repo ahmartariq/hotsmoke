@@ -4,7 +4,9 @@
 HotSmoke is a website for a local restaurant in Islamabad, Pakistan. They have a variety of delicious fast food and they decided to take orders online as well which will spread their reach and demand
  
 you can visit the webpage: [Visit Site](https://hotsmoke.netlify.app/)
+
 To get the proper experience of the website I have created a dummy admin and user access. 
+
 **For Admin** 
 *Email:* admin@yahoo.com
 *Password:* admin
