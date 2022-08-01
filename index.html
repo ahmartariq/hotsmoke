@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+
+<head>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HotSmoke</title>
+</head>
+
+<body style="height: 100%;">
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <svg id="loader" width="540" height="74" viewBox="0 0 540 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <mask id="path-1-outside-1_114_6" maskUnits="userSpaceOnUse" x="0.612061" y="0.139999" width="539" height="74"
+        fill="black">
+        <rect fill="white" x="0.612061" y="0.139999" width="539" height="74" />
+        <path
+          d="M4.61206 69H11.1441V45.724L10.9601 39.1L19.4241 39.192H39.3881L47.9441 39.1L47.7601 45.724V69H54.2921V5.06H47.7601V26.68L47.9441 33.58L39.4801 33.488H19.4241L10.9601 33.58L11.1441 26.588V5.06H4.61206V69Z" />
+        <path
+          d="M98.8215 69.92C117.59 69.92 127.158 56.488 127.158 37.168C127.158 18.308 117.59 4.14 98.8215 4.14C80.0535 4.14 70.2095 18.308 70.2095 37.168C70.2095 56.488 80.0535 69.92 98.8215 69.92ZM98.8215 64.216C84.0095 64.216 76.8335 52.716 76.8335 37.076C76.8335 21.988 84.0095 9.844 98.8215 9.844C113.634 9.844 120.534 21.988 120.534 37.076C120.534 52.716 113.634 64.216 98.8215 64.216Z" />
+        <path
+          d="M160.807 69H167.247V21.344L167.155 10.856L175.619 10.948H191.443V5.06H136.611V10.948H152.435L160.899 10.856L160.807 21.344V69Z" />
+        <path
+          d="M228.922 69.92C243.642 69.92 252.842 62.468 252.842 51.612C252.842 42.044 246.678 36.616 234.718 34.776L222.39 32.936C214.018 31.74 209.97 28.428 209.97 22.448C209.97 14.996 216.686 9.936 226.254 9.936C235.454 9.936 242.17 14.72 243.55 25.484L249.714 25.024C248.058 10.764 238.766 4.14 226.254 4.14C213.098 4.14 203.53 11.776 203.53 22.448C203.53 31.74 210.062 36.984 221.654 38.732L233.706 40.572C242.998 41.952 246.402 45.172 246.402 51.704C246.402 59.156 239.87 64.124 228.83 64.124C217.974 64.124 209.786 58.512 208.038 49.036L201.322 49.772C203.714 62.652 214.478 69.92 228.922 69.92Z" />
+        <path
+          d="M267.919 69H274.359V23L273.899 16.1H274.819L277.027 23L298.371 69H304.903L326.247 23L328.547 16.1H329.375L328.915 23V69H335.355V5.06H327.811L304.351 56.028L302.051 62.836H301.223L299.015 56.028L275.555 5.06H267.919V69Z" />
+        <path
+          d="M379.917 69.92C398.685 69.92 408.253 56.488 408.253 37.168C408.253 18.308 398.685 4.14 379.917 4.14C361.149 4.14 351.305 18.308 351.305 37.168C351.305 56.488 361.149 69.92 379.917 69.92ZM379.917 64.216C365.105 64.216 357.929 52.716 357.929 37.076C357.929 21.988 365.105 9.844 379.917 9.844C394.729 9.844 401.629 21.988 401.629 37.076C401.629 52.716 394.729 64.216 379.917 64.216Z" />
+        <path
+          d="M423.83 69H430.362V46.828L442.69 35.88L468.726 69H477.006L447.474 31.648L477.65 5.06H468.726L435.238 34.684L431.006 39.836H429.81L430.362 32.66V5.06H423.83V69Z" />
+        <path
+          d="M490.645 69H535.541V63.296L496.993 63.388L497.177 54.464V47.288L496.993 38.824L531.125 38.916V33.12L496.993 33.212L497.177 24.748V19.78L496.993 10.764L535.541 10.856V5.06H490.645V69Z" />
+      </mask>
+      <path
+        d="M4.61206 69H11.1441V45.724L10.9601 39.1L19.4241 39.192H39.3881L47.9441 39.1L47.7601 45.724V69H54.2921V5.06H47.7601V26.68L47.9441 33.58L39.4801 33.488H19.4241L10.9601 33.58L11.1441 26.588V5.06H4.61206V69Z"
+        stroke="white" stroke-width="8" mask="url(#path-1-outside-1_114_6)" />
+      <path
+        d="M98.8215 69.92C117.59 69.92 127.158 56.488 127.158 37.168C127.158 18.308 117.59 4.14 98.8215 4.14C80.0535 4.14 70.2095 18.308 70.2095 37.168C70.2095 56.488 80.0535 69.92 98.8215 69.92ZM98.8215 64.216C84.0095 64.216 76.8335 52.716 76.8335 37.076C76.8335 21.988 84.0095 9.844 98.8215 9.844C113.634 9.844 120.534 21.988 120.534 37.076C120.534 52.716 113.634 64.216 98.8215 64.216Z"
+        stroke="white" stroke-width="8" mask="url(#path-1-outside-1_114_6)" />
+      <path
+        d="M160.807 69H167.247V21.344L167.155 10.856L175.619 10.948H191.443V5.06H136.611V10.948H152.435L160.899 10.856L160.807 21.344V69Z"
+        stroke="white" stroke-width="8" mask="url(#path-1-outside-1_114_6)" />
+      <path
+        d="M228.922 69.92C243.642 69.92 252.842 62.468 252.842 51.612C252.842 42.044 246.678 36.616 234.718 34.776L222.39 32.936C214.018 31.74 209.97 28.428 209.97 22.448C209.97 14.996 216.686 9.936 226.254 9.936C235.454 9.936 242.17 14.72 243.55 25.484L249.714 25.024C248.058 10.764 238.766 4.14 226.254 4.14C213.098 4.14 203.53 11.776 203.53 22.448C203.53 31.74 210.062 36.984 221.654 38.732L233.706 40.572C242.998 41.952 246.402 45.172 246.402 51.704C246.402 59.156 239.87 64.124 228.83 64.124C217.974 64.124 209.786 58.512 208.038 49.036L201.322 49.772C203.714 62.652 214.478 69.92 228.922 69.92Z"
+        stroke="white" stroke-width="8" mask="url(#path-1-outside-1_114_6)" />
+      <path
+        d="M267.919 69H274.359V23L273.899 16.1H274.819L277.027 23L298.371 69H304.903L326.247 23L328.547 16.1H329.375L328.915 23V69H335.355V5.06H327.811L304.351 56.028L302.051 62.836H301.223L299.015 56.028L275.555 5.06H267.919V69Z"
+        stroke="white" stroke-width="8" mask="url(#path-1-outside-1_114_6)" />
+      <path
+        d="M379.917 69.92C398.685 69.92 408.253 56.488 408.253 37.168C408.253 18.308 398.685 4.14 379.917 4.14C361.149 4.14 351.305 18.308 351.305 37.168C351.305 56.488 361.149 69.92 379.917 69.92ZM379.917 64.216C365.105 64.216 357.929 52.716 357.929 37.076C357.929 21.988 365.105 9.844 379.917 9.844C394.729 9.844 401.629 21.988 401.629 37.076C401.629 52.716 394.729 64.216 379.917 64.216Z"
+        stroke="white" stroke-width="8" mask="url(#path-1-outside-1_114_6)" />
+      <path
+        d="M423.83 69H430.362V46.828L442.69 35.88L468.726 69H477.006L447.474 31.648L477.65 5.06H468.726L435.238 34.684L431.006 39.836H429.81L430.362 32.66V5.06H423.83V69Z"
+        stroke="white" stroke-width="8" mask="url(#path-1-outside-1_114_6)" />
+      <path
+        d="M490.645 69H535.541V63.296L496.993 63.388L497.177 54.464V47.288L496.993 38.824L531.125 38.916V33.12L496.993 33.212L497.177 24.748V19.78L496.993 10.764L535.541 10.856V5.06H490.645V69Z"
+        stroke="white" stroke-width="8" mask="url(#path-1-outside-1_114_6)" />
+    </svg>
+
+  </div>
+  
+  <!-- Main Page -->
+  <div id="home">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="width: 100%; background-color:#1b161341;">
+      <div class="container-fluid ">
+          <a class="navbar-brand" href="index.html" style="width: 8%;">
+              <img src="images/logo.png" alt="logo" style="width: 55%;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="menu.html">Menu</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="aboutUs.html">About Us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="contactUs.html">Contact Us</a>
+                  </li>
+              </ul>
+              <ul class="cart navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="login.html" id="user">Login</a>
+                  </li>
+                  <li class="nav-item dropdown" id="cart">
+                      <a class="nav-link" href="checkout.html">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          <span class="badge badge-warning" id="lblCartCount">0</span>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+    <!-- Hero section -->
+    <div class="container-fluid mt-4">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+          <h1 class="primary-color" id="hero-h1">Feel the Authentic &</h1>
+          <h1 class="primary-color" id="hero-h2">Original Taste From Us</h1>
+          <p class="secondary-color" id="hero-p">The HotSmoke is established in January 2020. Offering a wide varity of food.</p>
+          <br>
+          <a href="menu.html" class="email-button" id="hero-btn">Visit Shop</a>
+          <br>
+        </div>
+        <div class="col-12 col-md-6 col-sm-6 col-lg-6 col-xl-6 img-area">
+          <img class="hero-img" src="images/hero-img.jpg" alt="" width="55%">
+        </div>
+      </div>
+    </div>
+
+    <!-- Introduction -->
+    <div class="container mt-5">
+      <h1 class="text-center primary-color dancing-font">Introduction</h1>
+      <p class="text-center secondary-color px-lg-5">Hotsmoke is a Islamabad Based Cafe which was established in 2020.
+        It provide best quality food and have an elegant interior design where customers can enjoy their meal. We
+        provide various type of food here.</p>
+
+      <div class="row justify-content-center mt-5">
+        <div class="col-8 col-sm-6 col-md-4 col-lg-4 col-xl-4 info-1 ">
+          <img src="images/restaurant.jpg" alt="" width="100%">
+          <div class="res-info">
+            <h3 class="primary-color">Restuarant</h3>
+            <a href="contactUs.html" class="secondary-color">Learn More</a>
+          </div>
+        </div>
+        <div class="col-8 col-sm-6 col-md-4 col-lg-4 col-xl-4 info-2">
+          <img src="images/menu.jpg" alt="" width="100%">
+          <div class="res-info">
+            <h3 class="primary-color">Menu</h3>
+            <a href="menu.html" class="secondary-color">Learn More</a>
+          </div>
+        </div>
+        <div class="col-8 col-sm-6 col-md-4 col-lg-4 col-xl-4 info-3">
+          <img src="images/about.jpg" alt="" width="100%">
+          <div class="res-info">
+            <h3 class="primary-color">About Us</h3>
+            <a href="aboutUs.html" class="secondary-color">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BRANDS -->
+    <div class="container-fluid" style="background-color: #1b1613;">
+      <div class="container" style="margin-top: 80px;">
+        <div class="row justify-content-between brands">
+          <img src="images/coca.png" alt="cocacola logo">
+          <img src="images/dipitt.png" alt="dipitt logo">
+          <img src="images/kn.png" alt="k&ns logo">
+          <img src="images/foodpanda.png" alt="foodpanda logo">
+        </div>
+      </div>
+    </div>
+
+    <!-- Restaurant -->
+    <div class="container px-5" style="margin-top: 80px;">
+      <div class="row" style="row-gap: 0;">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 res-text text-center justify-content-center">
+          <h2 class="primary-color dancing-font">Tradition</h2>
+          <h4 style="color: black">Our Mission</h4>
+          <p class="secondary-color">Mission: Our mission is to make everyone more conscience about their food
+            choices, live a healthier and more sustainable lifestyle.</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mission-img">
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mission-img2">
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 res-text text-center justify-content-center">
+          <h2 class="primary-color dancing-font">Our Happy Place</h2>
+          <h4 style="color: black">Hotsmoke</h4>
+          <p class="secondary-color">Our chefs and employees from different nationalities invite you and your friends or
+            family for a healthy and innovative food experience at the Vegan Sushi Bar by Happy Fish. Where we share our
+            exclusive and highly curated dishes while still maintaining a positive impact on our community and
+            environment</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="container-fluid bg-img" style="margin-top:80px">
+      <div class="container">
+        <h1 class="primary-color text-center dancing-font">Menu</h1>
+        <div class="row justify-content-center menu-section">
+          <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 mint menu-items">
+          </div>
+          <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 fries menu-items">
+          </div>
+          <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 burger menu-items">
+          </div>
+          <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 pizza menu-items">
+          </div>
+          <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 wings menu-items">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Email section -->
+    <div class="container-fluid news" style="margin-top:80px; align-items: center; display: flex; padding-bottom: 28px;">
+      <div class="container center">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h2 class="text-white text-center " style="text-transform:uppercase ;">Sign Up for daily updates</h2>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 d-flex justify-content-center align-items-center">
+                <input type="email" class="email" placeholder="Enter Email ">
+              </div>
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 d-flex justify-content-center align-items-center">
+                <button class="email-button">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="container" style="margin-top: 80px;">
+      <div class="row">
+        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+          <div class="justify-content-center">
+            <img src="images/logo.png" alt="" width="30%">
+          </div>
+          <br>
+          <div>
+            <p class="secondary-color">Hotsmoke - Hotsmoke is a Islamabad Based Cafe which was established in 2020. It
+              provide best quality food
+              and have an elegant interior design where customers can enjoy their meal. We provide various type of food
+              here.</p>
+            <span class="text-white">Copyright 2022 - All rights reserved</span>
+          </div>
+          <div class="social-icon">
+            <a class="facebook" href="https://www.facebook.com/muhammad.ahmar.566/"><i
+                class="fab fa-facebook-f"></i></a>
+            <a class="twitter" href="https://twitter.com/ahmartariq10"><i class="fab fa-twitter"></i></a>
+            <a class="instagram" href="https://www.instagram.com/ahmartariq10/"><i class="fab fa-instagram"></i></a>
+            <a class="linkedin" href="https://www.linkedin.com/in/ahmar-tariq-498226193/"><i
+                class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+          <h3 class="footer-title text-white">Resources</h3>
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+          <h3 class="footer-title text-white">Contact</h3>
+          <ul class="address">
+            <li class="secondary-color"><a><i class="fa fa-map-marker"></i> Islamabad, ISB </a></li>
+            <li class="secondary-color"><a><i class="fa fa-phone"></i> P: +92 312 5077608</a></li>
+            <li class="secondary-color"><a><i class="fa fa-envelope"></i> E: ahmartariq46@yahoo.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/CSSRulePlugin.min.js" integrity="sha512-oYnRsy+bFXYr+btXcKk2dpzfERnCUc5G4GkJ0AO/XSvomLV7Xc7tZVhTsYIz9QzOAw9qo/6qoA6JTpzaYuHUGg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
+</body>
+<script>
+  gsap.registerPlugin(ScrollTrigger)
+
+  const isLoader = sessionStorage.getItem("doNotShow")
+  if(isLoader){
+
+    gsap.from("#hero-h1" , {duration : 1 , y: 10 , opacity : 0, ease : "power2.inout"}) 
+    gsap.from("#hero-h2" , {duration : 1 , y: 10 , opacity : 0, ease : "power2.inout" , delay : 0.5}) 
+    gsap.from("#hero-p" , {duration : 1 , y: 20 , opacity : 0, ease : "power2.inout" , delay : 1})
+    gsap.from("#hero-btn" ,{duration : 1 , opacity : 0 , ease: "power2.inout" , delay : 1.5})
+    gsap.to( ".img-area" , {'--show' : "0%",  duration: 1.5 , ease : "power2.inout", delay: 2 } )
+    gsap.from(".hero-img" , {duraton:0 , opacity: 0 , ease : "power2.in" , delay: 3.7 })
+  }else{
+    gsap.from("#hero-h1" , {duration : 1 , y: 10 , opacity : 0, ease : "power2.inout" ,delay : 8.5} ) 
+    gsap.from("#hero-h2" , {duration : 1 , y: 10 , opacity : 0, ease : "power2.inout" , delay : 9}) 
+    gsap.from("#hero-p" , {duration : 1 , y: 20 , opacity : 0, ease : "power2.inout" , delay : 9.5})
+    gsap.from("#hero-btn" ,{duration : 1 , opacity : 0 , ease: "power2.inout" , delay : 10})
+    gsap.to( ".img-area" , {'--show' : "0%", duration: 1.5 , ease : "power2.inout", delay: 10.5 } )
+    gsap.from(".hero-img" , {duraton:0 , opacity: 0 , ease : "power2.in" , delay: 12.2 })   
+  }
+
+  gsap.from(".info-1" ,{ScrollTrigger : ".info-1",  duration : 3 , x : -20 , opacity : 0})
+  
+  
+</script>
+</html>
+<script src="js/main.js"></script>
+<script src="js/preloader.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jQuery.slim.min.js"></script>
+<script src="https://kit.fontawesome.com/5e8b9def84.js" crossorigin="anonymous"></script>

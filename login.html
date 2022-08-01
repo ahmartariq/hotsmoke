@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hotsmoke</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 p-0" style=" height: 100vh; overflow: hidden;">
+        <img src="images/hero-img.jpg" alt="" width="100%">
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 p-5">
+        <a href="javascript: history.go(-1)"><i class="fa-solid fa-arrow-left backBtn"></i></a>
+        <div class="align-items-center justify-content-center d-flex flex-column">
+          <h3 class="text-white">Login to <strong style="color: #ce913a;">HotSmoke</strong></h3>
+          <p class="mb-4 secondary-color">We know the cuisines and your taste better than anyone!</p>
+          <form method="post" id="login">
+            <div class="form-group first d-flex flex-column">
+              <label class="primary-color" for="username">Email</label>
+              <input type="text" class="email" id="username">
+            </div>
+            <div class="form-group last mb-3 d-flex flex-column">
+              <label class="primary-color" for="password">Password</label>
+              <input type="password" class="email" id="password">
+            </div>
+
+            <div class="d-flex mb-1 align-items-center">
+              <label class="control control--checkbox mb-0"><span class="caption">Remember me</span>
+                <input type="checkbox" checked="checked" />
+                <div class="control__indicator"></div>
+              </label>
+              <span class="ml-auto"><a href="forget-password.html" class="forgot-pass" style="color: #e0ae66">Forgot
+                  Password</a></span>
+            </div>
+            <a href="sign-Up.html" class="secondary-color">Do not have an Account?</a>
+            <small class="text-danger " id="error" style="display: none;"></small>
+            <br><br>
+            <button class="email-button">Log In</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/5e8b9def84.js" crossorigin="anonymous"></script>
+  <script src="js/login.js"></script>
+</body>
+
+</html>

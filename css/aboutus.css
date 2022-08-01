@@ -1,0 +1,48 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #211b16 !important;
+    color: white !important;
+
+}
+
+.map {
+    background: url(../images/map.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+
+.img-main{
+    background: url(../images/restaurant.jpg) no-repeat fixed right;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.aboutpic{
+        background: url(../images/aboutUsMain.jpg);
+        background-position: center;
+        min-height: 516px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+}
+
+.row-fullScreen{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.stat-cards{
+   width: 100%;
+   min-height: 150px;
+   background-color: #302720; 
+}

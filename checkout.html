@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotsmoke</title>
+</head>
+<body>
+       <!-- NAVBAR -->
+       <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="width: 100%; background-color:#1b161341;">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="index.html" style="width: 8%;">
+                <img src="images/logo.png" alt="logo" style="width: 55%;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="aboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="contactUs.html">Contact Us</a>
+                    </li>
+                </ul>
+                <ul class="cart navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="checkout.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="badge badge-warning" id="lblCartCount">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row align-items-start">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <h1 class="primary-color">Billing Details</h1>
+                <form action="#" method="post" id="form">
+                    <div class="form-group first d-flex flex-column">
+                      <label class="primary-color" for="username">Full name</label>
+                      <input type="text" class="email" placeholder="your username" id="username" onfocusout="usernameVal()">
+                      <small class="text-danger mt-2 pl-2" id="usernameError" style="display: none;"></small>
+                    </div>
+                    <div class="form-group last mb-3 d-flex flex-column">
+                      <label class="primary-color" for="password">Email</label>
+                      <input type="Email" class="email" placeholder="Your Email" id="email" onfocusout="emailVal()">
+                      <small class="text-danger mt-2 pl-2" id="emailError" style="display: none;"></small>
+                    </div>
+                    <div class="form-group last mb-3 d-flex flex-column">
+                      <label class="primary-color" for="password">Number</label>
+                      <input type="phone" class="email" placeholder="Your Number" id="number" onfocusout="numberVal()">
+                      <small class="text-danger mt-2 pl-2" id="numberError" style="display: none;"></small>
+                    </div>
+                    <div class="form-group last mb-3 d-flex flex-column">
+                        <label class="primary-color" for="password">Address</label>
+                        <input required type="text" class="email" placeholder="Your Address" id="address" onfocusout="addressVal()">
+                        <small class="text-danger mt-2 pl-2" id="addressError" style="display: none;"></small>
+                      </div>
+                  </form>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 order">
+                <h2 class="primary-color text-center">Your Order</h2>
+
+            <table style="width:100%" class="tbl">
+                <tr class="primary-color">
+                    <th class="tblProduct"><h4>Product</h4></th>
+                    <th class="tblSubtotal"><h4>Subtotal</h4></th>
+                </tr>
+                <tr class="white-color">
+                    <td>Cronco Chicken Burger - Burger only  × 1</td>
+                    <td style="text-align: right;">Rs.365</td>
+                </tr>
+                <tr class="white-color">
+                    <td>Cronco Chicken Burger - Burger only  × 1</td>
+                    <td style="text-align: right;">Rs.365</td>
+                </tr>
+                <tr class="white-color">
+                    <td>Cronco Chicken Burger - Burger only  × 1</td>
+                    <td style="text-align: right;">Rs.365</td>
+                </tr>
+                <tr class="white-color">
+                    <td>Cronco Chicken Burger - Burger only  × 1</td>
+                    <td style="text-align: right;">Rs.365</td>
+                </tr>
+                <tr class="primary-color">
+                    <th class="tblProduct" style="vertical-align: bottom;"><h4>Total</h4></th>
+                    <th class="tblSubtotal" style="vertical-align: bottom;"><p style="margin-bottom:8px">356</p></th>
+                </tr>
+            </table>
+            <p class="white-color mt-4">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy</p>
+            <button class="email-button" style="width: 100% ; margin: 0" onclick="order()">Place Order</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jQuery.slim.min.js"></script>
+<script src="js/checkout.js"></script>
+<script src="https://kit.fontawesome.com/5e8b9def84.js" crossorigin="anonymous"></script>

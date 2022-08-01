@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hotsmoke</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 p-0" style=" height: 110vh; overflow: hidden;">
+        <img src="images/hero-img.jpg" alt="" width="100%">
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 p-5">
+        <a href="login.html"><i class="fa-solid fa-arrow-left backBtn"></i></a>
+        <div class="align-items-center justify-content-center d-flex flex-column">
+          <h3 class="text-white">Sign Up to <strong style="color: #ce913a;">HotSmoke</strong></h3>
+          <p class="mb-4 secondary-color">We know the cuisines and your taste better than anyone!</p>
+          <form action="#" method="post" id="form">
+            <div class="form-group first d-flex flex-column">
+              <label class="primary-color" for="username">Full name</label>
+              <input required type="text" class="email" placeholder="your name" id="username"
+                onfocusout="usernameVal()">
+              <small class="text-danger mt-2 pl-2" id="usernameError" style="display: none;"></small>
+            </div>
+            <div class="form-group last mb-3 d-flex flex-column">
+              <label class="primary-color" for="password">Email</label>
+              <input required type="Email" class="email" placeholder="Your Email" id="email" onfocusout="emailVal()">
+              <small class="text-danger mt-2 pl-2" id="emailError" style="display: none;"></small>
+            </div>
+            <div class="form-group last mb-3 d-flex flex-column">
+              <label class="primary-color" for="password">Number</label>
+              <input required type="phone" class="email" placeholder="Your Number" id="number" onfocusout="numberVal()">
+              <small class="text-danger mt-2 pl-2" id="numberError" style="display: none;"></small>
+            </div>
+            <div class="form-group last mb-3 d-flex flex-column">
+              <label class="primary-color" for="password">Address</label>
+              <input required type="text" class="email" placeholder="Your Address" id="number">
+            </div>
+            <div class="form-group last mb-3 d-flex flex-column">
+              <label class="primary-color" for="password">Password</label>
+              <input required type="password" class="email" placeholder="Your Password" id="password"
+                onfocusout="passwordVal()">
+              <small class="text-danger mt-2 pl-2" id="passwordError" style="display: none;"></small>
+            </div>
+            <div class="form-group last mb-3 d-flex flex-column">
+              <label class="primary-color" for="password">Confirm Password</label>
+              <input required type="password" class="email" placeholder="Your Password" id="confirmPassword"
+                onfocusout="confirmPassVal()">
+              <small class="text-danger mt-2 pl-2" id="confirmPassError" style="display: none;"></small>
+            </div>
+            <button class="email-button">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/validations.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/5e8b9def84.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
